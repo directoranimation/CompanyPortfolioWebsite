@@ -1,26 +1,31 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.animated-background{
+  z-index: -10;
+  background: linear-gradient(45deg,  #d1dcda, #d5e1db, #cab2b3, #C7A1B8, #eb7a62, #acaadd, #fbc9be, #fdc9c0, #fbbfb1, #f5ad9c, #f7b7a3, #f7b7a3, #eb7a62);
+  background-size: 500% 500%;
+  animation: gradientAnimation 6s ease-in-out infinite;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
+
+@font-face {
+  font-family: 'SatoshiVariable';
+  src: url('/Satoshi-Black.woff') format('woff');
+  
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.Ellipse-bg{
+  background-image: url(/public/Ellipse-Bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Caveat{
+  font-family: 'Caveat', cursive;
 }
