@@ -47,12 +47,13 @@
 // export default Subscription;
 
 import Image from "next/image";
+import EllipseBackground from "@/assets/EllipseBg.png";
 
 const Subscription = () => {
   return (
     <section className="w-full flex justify-center py-10 px-4 sm:px-6 lg:px-8">
-      <div className="w-[90%] bg-white -mt-20 z-40 shadow-lg rounded-2xl gap-2 md:gap-10 md:w-5/6 lg:w-4/5 xl:w-5xl 2xl:w-2/3 flex flex-col lg:flex-row p-8 md:p-10 justify-between items-center">
-        <div className="w-full lg:w-3/5 xl:w-3/5 space-y-4 text-center md:text-left">
+      <div className="relative w-[90%] bg-white -mt-20 z-40 shadow-lg rounded-2xl gap-2 md:gap-10 md:w-5/6 lg:w-4xl xl:w-5xl 2xl:w-7xl flex flex-col lg:flex-row p-8 md:p-10 justify-between items-center">
+        <div className="w-full lg:w-3/5 xl:w-2/5 space-y-4 text-center md:text-left">
           <h2 className="text-2xl text-center lg:text-left md:text-3xl 2xl:text-4xl font-bold leading-tight">
             <span className="lg:block text-black">Making Your </span>
             <span className="lg:block text-black">Business A </span>
@@ -78,11 +79,11 @@ const Subscription = () => {
         <div className="w-full lg:w-2/5 flex justify-center items-center mt-6 md:mt-0">
           <div className="w-full h-full 2xl:h-full bg-gray-100 rounded-lg flex items-center justify-center">
             <Image
-              src="/placeholder-image.png" // Replace with your actual image
+              src={EllipseBackground} // Replace with your actual image
               alt="Placeholder"
               width={150}
               height={350}
-              className="opacity-50 w-36 h-[200px] lg:h-[250px] xl:h-[300px] 2xl:h-[350px]"
+              className="absolute object-cover top-0 bottom-0 md:relative opacity-50 w-36 h-[200px] lg:h-[250px] xl:h-[300px] 2xl:h-[350px]"
             />
           </div>
         </div>

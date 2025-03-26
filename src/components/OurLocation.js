@@ -156,11 +156,11 @@ export default function OurLocations() {
   ];
 
   return (
-    <section className="w-full min-h-screen py-16 px-6 text-center">
-      <h2 className="text-3xl md:text-3xl 2xl:text-4xl font-bold text-gray-800">Our Locations</h2>
+    <section className="w-full h-full py-16 px-6 text-center">
+      <h2 className="text-2xl md:text-3xl 2xl:text-4xl font-bold text-gray-800">Our Locations</h2>
       <p className="text-gray-500 mt-2">Say hello to our friendly team at one of these locations.</p>
 
-      <div className="relative w-full md:w-5/6 lg:w-4/5 xl:w-5xl 2xl:w-2/3 mx-auto mt-8 bg-contain bg-no-repeat bg-center rounded-lg"
+      <div className="relative w-[90%] md:w-5/6 lg:w-4/5 xl:w-5xl 2xl:w-7xl mx-auto mt-8 bg-contain bg-no-repeat bg-center rounded-lg"
            style={{ backgroundImage: `url(${WorldSvgMap.src})`, height: "50vh" }}>
         {locations.map((location) => (
           <span key={location.id}
@@ -188,18 +188,18 @@ export default function OurLocations() {
         )}
       </div>
 
-      <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-4xl md:w-5/6 lg:w-4/5 xl:w-5xl 2xl:w-2/3 mx-auto text-gray-800">
-        <div>
+      <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-[90%] md:w-5/6 lg:w-4/5 xl:w-5xl 2xl:w-7xl mx-auto text-gray-800">
+        <div className="text-center bg-white p-4 rounded-lg md:bg-transparent md:p-0 md:rounded-none">
           <h3 className="font-semibold">Operations/HR</h3>
           <p className="text-sm text-gray-600">Our friendly team is here to help.</p>
           <a href="mailto:jahanzaib@devtechfusion.com" className="text-blue-500 text-sm">jahanzaib@devtechfusion.com</a>
         </div>
-        <div>
+        <div className="text-center bg-white p-4 rounded-lg md:bg-transparent md:p-0 md:rounded-none">
           <h3 className="font-semibold">Business Development</h3>
           <p className="text-sm text-gray-600">Questions or queries? Get in touch!</p>
           <a href="mailto:sales@devtechfusion.com" className="text-blue-500 text-sm">sales@devtechfusion.com</a>
         </div>
-        <div>
+        <div className="text-center bg-white p-4 rounded-lg md:bg-transparent md:p-0 md:rounded-none">
           <h3 className="font-semibold">Technology</h3>
           <p className="text-sm text-gray-600">Questions or queries? Get in touch!</p>
           <a href="mailto:ahmad@devtechfusion.com" className="text-blue-500 text-sm">ahmad@devtechfusion.com</a>

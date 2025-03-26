@@ -51,7 +51,7 @@ export default function ProjectShowcasing() {
         Neque, Pulvinar Vestibulum Non Aliquam.
       </p>  
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-10 w-[90%] md:w-5/6 lg:w-4/5 xl:w-5xl 2xl:w-2/3 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-[90%] md:w-5/6 lg:w-4xl xl:w-5xl 2xl:w-7xl mx-auto">
         {project.map((caseStudy, index) => (
           <div 
             key={index} 

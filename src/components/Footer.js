@@ -90,7 +90,7 @@ import { FaXTwitter } from "react-icons/fa6";
 export default function Footer() {
   return (
     <footer className="flex flex-col items-center justify-center bg-white pt-16 pb-12 px-6">
-      <div className="w-full md:w-5/6 lg:w-4/5 xl:w-5xl 2xl:w-2/3 mx-auto grid grid-cols-1 gap-8 items-center">
+      <div className="w-full md:w-5/6 lg:w-4/5 xl:w-5xl 2xl:w-7xl mx-auto grid grid-cols-1 gap-8 items-center">
         <div className="flex flex-col space-y-6">
           <div className="flex flex-col items-left">
             <div className="flex items-center">
@@ -118,7 +118,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="w-full md:w-5/6 lg:w-4/5 xl:w-5xl 2xl:w-2/3 flex flex-col md:flex-row items-center justify-between pt-10 border-t-[1px] border-gray-200 text-gray-500 text-sm mt-8 px-2">
+      <div className="w-full md:w-5/6 lg:w-4/5 xl:w-5xl 2xl:w-7xl flex flex-col md:flex-row items-center justify-between pt-10 border-t-[1px] border-gray-200 text-gray-500 text-sm mt-8 px-2">
         <span className="text-center md:text-left">© 2025 DTF. All rights reserved.</span>
         <div className="flex justify-center space-x-4 mt-4 md:mt-0">
           <a href="#" className="text-gray-700 hover:text-purple-700 text-xl"><FaXTwitter /></a>

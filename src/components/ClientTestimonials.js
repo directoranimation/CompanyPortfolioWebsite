@@ -43,13 +43,13 @@ import Client1 from "@/assets/Client1.png";
 
 export default function TestimonialSection() {
   return (
-    <section className="w-full h-auto py-28 relative z-20">
+    <section className="w-full sm:h-[100vh] lg:h-[70vh] py-28 relative z-20">
       <div className="text-center mb-10 z-30">
-        <h2 className="text-3xl md:text-3xl 2xl:text-4xl font-bold text-[#212121]">What Our Clients Say</h2>
+        <h2 className="text-2xl md:text-3xl 2xl:text-4xl font-bold text-[#212121]">What Our Clients Say</h2>
         <p className="text-gray-500 mt-2">Neque, Pulvinar Vestibulum Non Aliquam.</p>
       </div>
 
-      <div className="h-auto py-10 flex flex-col lg:flex-row items-center justify-center gap-10 md:w-5/6 w-2/3 lg:w-4/5 xl:w-5xl 2xl:w-2/3 mx-auto">
+      <div className="h-auto py-10 flex flex-col lg:flex-row items-center justify-center gap-10 w-[90%] md:w-5/6 lg:w-4/5 xl:w-5xl 2xl:w-7xl mx-auto">
 
         <div className="w-full md:w-3/4 lg:w-1/2 z-20 flex justify-center">
           <Image

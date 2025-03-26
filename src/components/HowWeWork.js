@@ -42,16 +42,20 @@ import values from "./Values";
 import heroBackground from "@/assets/heroBackground.png";
 import Grains from "@/assets/Grains.png";
 import Blob from "@/assets/Blob.png";
+
+import GsapAnimejs from '@/components/Pixijs' 
+
 import Image from "next/image";
 
 export default function HowWeWork() {
   return (
     <section className="w-full relative py-16 text-center overflow-hidden">
-      <Image 
+      <GsapAnimejs/>
+      {/* <Image 
         src={heroBackground} 
         alt="Background" 
         className="absolute inset-0 object-cover opacity-50 -z-50 w-full h-full"
-      />
+      /> */}
       
       <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 relative z-10">
         <h2 className="text-2xl md:text-3xl 2xl:text-4xl font-bold text-gray-900">
@@ -62,7 +66,7 @@ export default function HowWeWork() {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-5 xl:gap-8 w-[90%] md:w-4/5 lg:w-3/4 xl:w-5xl 2xl:w-2/3 mx-auto relative z-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5 xl:gap-8 w-[90%] md:w-4/5 lg:w-4xl xl:w-5xl 2xl:w-7xl mx-auto relative z-10">
         {values.map((value, index) => (
           <div
             key={index}

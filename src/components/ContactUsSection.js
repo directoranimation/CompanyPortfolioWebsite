@@ -109,19 +109,19 @@ export default function ContactUs() {
   ];
 
   return (
-    <section className="w-full py-20 px-4 sm:px-6 md:px-12 lg:px-5 xl:px-6 2xl:px-10">
-      <div className="w-6xl md:w-5/6 lg:w-4/5 xl:w-5xl 2xl:w-2/3 mx-auto flex flex-col lg:flex-row gap-12">
+    <section className="w-full py-20 px-4 sm:px-6 md:px-12 lg:px-5 rounded-4xl">
+      <div className="w-[90%] md:w-5/6 lg:w-4/5 xl:w-5xl 2xl:w-7xl mx-auto flex flex-col items-top justify-center lg:flex-row gap-12">
         <div>
-          <h2 className="text-3xl text-center lg:text-left sm:text-4xl md:text-3xl 2xl:text-4xl font-bold text-gray-800">
+          <h2 className="text-2xl text-center lg:text-left sm:text-4xl md:text-3xl 2xl:text-4xl font-bold text-gray-800">
             Get in touch with our team
           </h2>
           <p className="text-gray-600 text-center lg:text-left mt-2 text-sm sm:text-base">
             We'd love to hear from you. Please fill out this form or shoot us an email.
           </p>
 
-          <div className="mt-6 flex md:flex-row lg:flex-col space-y-6">
+          <div className="mt-6 flex flex-col space-y-6">
             {contactdetails.map((contact) => (
-              <div key={contact.id} className="flex items-start space-x-4">
+              <div key={contact.id} className="flex items-center space-x-4">
                 <span className="text-[#211951] text-xl sm:text-2xl">{contact.icon}</span>
                 <div>
                   <h3 className="font-semibold text-gray-800 text-lg">{contact.title}</h3>
@@ -135,7 +135,7 @@ export default function ContactUs() {
           </div>
         </div>
 
-        <div className="bg-white p-5 sm:p-5 rounded-lg shadow-md w-full">
+        <div className="bg-white xl:w-1/2 2xl:w-2/5 p-5 sm:p-5 rounded-lg shadow-md w-full">
           <form>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>

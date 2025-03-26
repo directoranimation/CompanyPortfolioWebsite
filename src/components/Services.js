@@ -51,7 +51,7 @@ export default function TechnologySolutions() {
         Neque, Pulvinar Vestibulum Non Aliquam.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 w-[90%] md:w-5/6 lg:w-4/5 xl:w-5xl 2xl:w-2/3 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-[90%] md:w-5/6 lg:w-4xl xl:w-5xl 2xl:w-7xl mx-auto">
         {solutions.map((solution, index) => (
           <div
             key={index}
@@ -63,7 +63,7 @@ export default function TechnologySolutions() {
             <h3 className="text-lg font-semibold text-gray-900 2xl:text-2xl mb-2">
               {solution.title}
             </h3>
-            <p className="text-gray-500 2xl:text-xl">{solution.description}</p>
+            <p className="text-gray-500 2xl:text-lg">{solution.description}</p>
           </div>
         ))}
       </div>

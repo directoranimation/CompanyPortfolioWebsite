@@ -88,7 +88,7 @@ const LogoSlider = () => {
   ];
 
   return (
-    <div className="w-[90%] md:w-5/6 lg:w-4/5 xl:w-5xl 2xl:2/3 my-5 overflow-hidden flex justify-center z-40 items-center h-20">
+    <div className="w-[90%] md:w-5/6 lg:w-4xl xl:w-5xl 2xl:7xl my-5 overflow-hidden flex justify-center z-40 items-center h-20">
       <AnimatePresence mode="wait">
         <motion.div
           key={index}

@@ -93,17 +93,17 @@ import Dots from "@/assets/Dots.png";
 import Circles from "@/assets/Circles.png";
 import ArrowLeft from "@/assets/ArrowLeft.png";
 import ArrowRight from "@/assets/ArrowRight.png";
-import Mountain from "@/assets/Mountain.png";
-import Ellipse5 from "@/assets/Ellipse-5.png";
 import LogoSlider from "./LogosSliderBar";
+import GsapAnimejs from '@/components/Pixijs' 
 
 const Hero = () => {
   return (
     <div className="w-full h-screen relative flex flex-col items-center justify-center overflow-hidden gap-10 px-6">
+      <GsapAnimejs/>
       <Image className="absolute top-5 right-[-100px] w-14 md:w-16 lg:w-20 xl:w-24" src={RingRight} alt="RingRight" />
       <Image className="absolute top-80 left-[-100px] w-14 md:w-16 lg:w-20 xl:w-24" src={RingLeft} alt="RingLeft" />
       
-      <div className="w-[95%] relative h-auto z-10 md:w-5/6 lg:w-4/5 xl:w-5xl 2xl:w-3/5 flex flex-col items-center gap-12">
+      <div className="w-[95%] relative h-auto z-10 md:w-5/6 lg:w-4xl xl:w-5xl 2xl:w-7xl flex flex-col items-center gap-12">
         <Image className="absolute top-[-10px] right-10 -z-10" src={Dots} alt="Dots" width={100} height={100} />
         <Image className="absolute top-[20px] left-10 -z-10" src={Circles} alt="Circles" width={40} height={40} />
         <h1 className="text-white mt-10 md:mt-0 text-center text-3xl md:text-[44px] lg:text-5xl 2xl:text-6xl font-black font-['SatoshiVariable']">  
@@ -111,13 +111,13 @@ const Hero = () => {
           <span className="text-[#211951]">Cutting-Edge Solutions</span>
         </h1>
         
-        <div className="absolute w-2/3 left-[18%] top-[38%] md:top-[28%] md:left-1/2 lg:top-1/3 lg:left-[46%] xl:left-[41%] 2xl:left-[43%] md:w-1/2 z-10 flex items-center justify-center gap-2 md:gap-3">
+        <div className="absolute select-none w-2/3 left-[18%] top-[38%] md:top-[28%] md:left-1/2 lg:top-1/3 lg:left-[43%] xl:left-[41%] md:w-1/2 z-10 flex items-center justify-center gap-1">
            <Image
             className="w-6 md:w-10 lg:w-11 xl:w-12 2xl:w-14"
             src={ArrowLeft}
             alt="RingLeft"
           />
-          <span className={`Caveat text-center text-[#211951] text-base md:text-lg lg:text-xl 2xl:text-2xl font-bold font-['Caveat']`}>Fusion Style</span>
+          <span className={`Caveat relative top-1 md:top-2 text-center text-[#211951] text-base md:text-lg lg:text-xl 2xl:text-2xl font-bold font-['Caveat']`}>Fusion Style</span>
           <Image
             className="w-6 md:w-10 lg:w-11 xl:w-12 2xl:w-14"
             src={ArrowRight}
@@ -135,9 +135,6 @@ const Hero = () => {
       </div>
       
       <LogoSlider />
-      
-      <Image className="absolute bottom-0 w-full h-[80%] -z-10" src={Mountain} alt="Mountain" />
-      {/* <Image className="absolute bottom-0 w-1/2 h-full -z-10" src={Ellipse5} alt="Ellipse5" /> */}
     </div>
   );
 };

@@ -34,7 +34,7 @@ import Link from 'next/link';
 
 const Nav = ({ mobileClose }) => {
   return (
-    <nav className="flex flex-col md:flex-row items-center bg-white md:p-1 lg:space-x-4 xl:space-x-6 rounded-lg shadow-md md:relative z-50">
+    <nav className="flex flex-col items-start p-10 md:flex-row md:items-center bg-white md:p-1 lg:space-x-4 xl:space-x-6 rounded-lg md:shadow-md md:relative z-50">
       <div className="flex flex-col md:px-5 md:text-xs md:text-[13px] xl:text-sm xl:px-3 md:flex-row items-center sm:space-x-3 lg:space-x-5 xl:space-x-10">
         {["Home", "About", "Services", "Projects", "Contact"].map((item) => (
           <Link
@@ -50,7 +50,7 @@ const Nav = ({ mobileClose }) => {
 
       <button
         type="button"
-        className="cursor-pointer bg-[#211951] sm:py-1 sm:px-4 lg:py-2 lg:px-6 rounded-lg md:text-[13px] xl:text-sm 2xl:text-base text-white mt-4 md:mt-0 transition-transform transform hover:scale-105"
+        className="cursor-pointer bg-[#211951]  py-1 px-4 lg:py-2 lg:px-6 rounded-lg md:text-[13px] xl:text-sm 2xl:text-base text-white mt-4 md:mt-0 transition-transform transform hover:scale-105"
       >
         Lets Talk
       </button>
