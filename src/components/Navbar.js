@@ -11,13 +11,13 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full backdrop-blur-2xl top-0 fixed z-50">
-      <div className="flex z-50 items-center justify-between px-6 md:px-10 py-2">
+    <header className="w-full backdrop-blur-lg top-0 fixed z-40">
+      <div className="flex items-center justify-between px-6 md:px-10 py-2">
         <Link href="/">
           <Image src={logo} alt="logo" width={200} priority className="z-50"/>
         </Link>
 
-        <div className="hidden md:flex">
+        <div className="hidden z-50 md:flex">
           <Nav />
         </div>
 

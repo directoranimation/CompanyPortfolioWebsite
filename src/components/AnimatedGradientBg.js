@@ -17,7 +17,7 @@ const FluidAnimation = () => {
             x: Math.random() * canvas.width,
             y: Math.random() * canvas.height,
             radius: Math.random() * 300 + 200,
-            color: ["hsl(12, 82%, 83%)", "hsl(214, 45%, 85%)"][Math.floor(Math.random() * 2)]
+            color: ["#7743DB", "hsl(214, 45%, 85%)"][Math.floor(Math.random() * 2)]
         }));
 
         function draw() {
@@ -29,7 +29,7 @@ const FluidAnimation = () => {
             ctx.globalCompositeOperation =  "source-over";
             blobs.forEach(blob => {
                 const gradient = ctx.createRadialGradient(
-                    blob.x, blob.y, blob.radius * 0.9,
+                    blob.x, blob.y, blob.radius * 0.5,
                     blob.x, blob.y, blob.radius
                 );
                 gradient.addColorStop(0, blob.color);

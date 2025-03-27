@@ -13,9 +13,8 @@ import MilestoneSection from "@/components/MilestoneSection";
 import TestimonialSection from "@/components/ClientTestimonials";
 import OurLocations from "@/components/OurLocation";
 import ContactUs from "@/components/ContactUsSection";
-import GsapAnimejs from '@/components/Pixijs' 
-
-import EllipseBackground from "@/assets/EllipseBg.png";
+import GsapAnimejs from '@/components/AnimatedGradientBg' 
+import Noise from '@/assets/Taxture.png'
 
 import Image from "next/image";
 
@@ -26,36 +25,35 @@ export default function Home() {
         <Navbar />
         <Hero />
       </div>
-
       <div className="relative w-full h-auto">
         <GsapAnimejs/>
+        {/* //style={{ backgroundImage: `url(${Noise.src})`}} */}
+        <div className="relative w-full h-auto bg-cover bg-center bg-no-repeat">
+          <Subscription />
+          <TechnologySolutions />
+          <ProjectShowcasing />
+          <HowWeWork />
+        </div>
 
-        <Subscription />
-        <TechnologySolutions />
-        <ProjectShowcasing />
-      </div>
+        <div className="relative w-full h-auto">
+          <MilestoneSection />
+          <TestimonialSection />
+          <div className="absolute invisible lg:visible left-[10%] p-4 sm:p-5 sm:left-[20%] md:left-[9%] lg:left-[10%] xl:left-[15%] 2xl:left-[18%] md:top-[48%] 2xl:top-[48%] top-[43%] z-30 w-2/3 sm:w-3/5 md:w-5/6 lg:w-4/5 xl:w-5xl 2xl:w-2/3 bg-white rounded-4xl shadow-lg md:flex flex-col gap-1 lg:flex-row items-center justify-between">
+            <span className="text-center sm:text-left">
+              “Statistics show that
+              <span className="text-red-500"> 95%</span>
+              of new products introduced each year end up failing”
+            </span>
+            <span className="mt-4 text-blue-500 sm:mt-0">With Us It Won’t Happen!</span>
+          </div>
+        </div>
 
-      <HowWeWork />
-
-      <div className="relative w-full h-auto">
-        <GsapAnimejs/>
-        <MilestoneSection />
-        <TestimonialSection />
-        <div className="absolute invisible lg:visible left-[10%] p-4 sm:p-5 sm:left-[20%] md:left-[9%] lg:left-[10%] xl:left-[15%] 2xl:left-[18%] md:top-[48%] 2xl:top-[48%] top-[43%] z-40 w-2/3 sm:w-3/5 md:w-5/6 lg:w-4/5 xl:w-5xl 2xl:w-2/3 bg-white rounded-4xl shadow-lg md:flex flex-col gap-1 lg:flex-row items-center justify-between">
-          <span className="text-center sm:text-left">
-            “Statistics show that
-            <span className="text-red-500"> 95%</span>
-            of new products introduced each year end up failing”
-          </span>
-          <span className="mt-4 text-blue-500 sm:mt-0">With Us It Won’t Happen!</span>
+        <div className="relative w-full h-auto">
+          <OurLocations />
+          <ContactUs />
         </div>
       </div>
 
-      <div className="relative w-full h-auto">
-       <GsapAnimejs/>
-        <OurLocations />
-        <ContactUs />
-      </div>
       <Footer />
     </div>
   );
